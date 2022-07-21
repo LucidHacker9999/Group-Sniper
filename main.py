@@ -11,7 +11,7 @@ print('''\x1b[34m
 print("\x1b[32mSTAR THE REPO ON GITHUB ! \x1b[39m")
 while True:
         ID = random.randint(10800000, 10960000) # Start and stop IDs edit this if you want!
-        webhook = DiscordWebhook(url="https://discord.com/api/webhooks/984866283344494623/VvF7_nl4OkHTo7r4eavKCu24QP4cVtKVoeNxJETJkFJPusR6rptv9SmtGDs_p67q8FNb") # initates connection with discord_webhook module
+        webhook = DiscordWebhook(url="Put Your Wenhook Here") # initates connection with discord_webhook module
         r = requests.get(f'https://groups.roblox.com/v1/groups/{ID}') #sends requests using id
         json = r.json() # json
         if 'owner' in r.text: #checks if the group is valid to prevent key errors
